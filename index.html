@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="it">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/logo3TGDIcon.png">
+    <script src="js/script.js" defer></script>
+    <title>The Guildmaster’s Desk</title>
+</head>
+
+
+<body class="parchment-bg">
+    <img src="img/logo3TGD.png" alt="The Guildmaster’s Desk" id="titleImg">
+    <div class="calculator">
+        <div style="display: flex; flex-direction: column;">
+            <div class="calc-form" id="mainForm">
+                <form action="" method="get" id="calculatorForm">
+                    <label for="emv">Estimated Market Value</label>
+                    <div class="input-group">
+                        <input type="text" id="emv" placeholder="0" autocomplete="off">
+                        <button type="button" class="btn-info" id="btn-emvInfo">?</button>
+                        <div class="tooltip" id="tooltip-emvInfo">
+                            <h3>Estimated Market Value</h3>
+                            <p>The estimated market value (EMV) represents the anticipated selling price of the items in
+                                question. It is an approximation based on current market trends, demand, and other
+                                relevant
+                                factors that influence the value of the items being sold.</p>
+                        </div>
+                    </div>
+
+                    <label for="repair">Repair Cost</label>
+                    <div class="input-group">
+                        <input type="text" id="repair" placeholder="0" autocomplete="off">
+
+                        <button type="button" class="btn-info" id="btn-repairInfo">?</button>
+                        <div class="tooltip" id="tooltip-repairInfo">
+                            <h3>Repair Cost</h3>
+                            <p>The repair cost refers to the expenses incurred to restore the items before they can
+                                be sold.</p>
+                        </div>
+
+                    </div>
+
+                    <label for="participants">Participants</label>
+                    <div class="input-group">
+                        <input type="text" id="participants" placeholder="0" autocomplete="off">
+                        <button type="button" id="btn-customShares">set</button>
+                        <div class="tooltip" id="tooltip-setCustomShares">
+                            <h3>Custom Shares</h3>
+                            <p>By clicking the "set" button, you can define custom shares for each participant involved
+                                in the loot production. This allows for a more tailored distribution of costs and
+                                profits
+                                based on individual contributions or agreements among the participants.</p>
+                        </div>
+                        <button type="button" class="btn-info" id="btn-participantsInfo">?</button>
+                        <div class="tooltip" id="tooltip-participantsInfo">
+                            <h3>Participants</h3>
+                            <p>The number of participants indicates how many players were involved loot production. This
+                                number can affect the distribution of costs and profits among those
+                                involved.</p>
+                        </div>
+                    </div>
+
+                    <label for="bags">Bag Value</label>
+                    <div class="input-group">
+                        <input type="text" id="bags" placeholder="0" autocomplete="off">
+                        <button type="button" class="btn-info" id="btn-bagsInfo">?</button>
+                        <div class="tooltip" id="tooltip-bagsInfo">
+                            <h3>Bags</h3>
+                            <p>The number of bags refers to the quantity of containers or sacks used to hold the items
+                                being sold. This can impact the logistics and costs associated with the sale.</p>
+                        </div>
+                    </div>
+
+                    <label for="discount">Discount (%)</label>
+                    <div class="input-group">
+                        <input type="text" id="discount" placeholder="0" autocomplete="off">
+                        <button type="button" class="btn-info" id="btn-discountInfo">?</button>
+                        <div class="tooltip" id="tooltip-discountInfo">
+                            <h3>Discount</h3>
+                            <p>The discount percentage represents any reduction applied to the total cost or price.
+                                This can be used as an incentive for buyers or to account for negotiations during the
+                                sale.
+                            </p>
+                        </div>
+                    </div>
+
+            </div>
+            <div class="calc-form" id="btn-group">
+                <div class="input-group">
+                    <button type="submit" id="btn-calc">Calculate</button>
+                    <button type="button" id="btn-reset">Reset</button>
+                    <button type="button" class="btn-info" id="btn-genInfo">?</button>
+                    <div class="tooltip" id="tooltip-genInfo">
+                        <h3>General Information</h3>
+                        <p>This calculator is designed to help guildmasters and traders estimate the final cost of
+                            selling items after accounting for various factors such as repair costs, number of
+                            participants, bags used, and applicable discounts. By inputting the relevant data, users
+                            can quickly determine the net amount they can expect from their sales.</p>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+        <div class="calc-form" id="pgForm">
+            <div id="pgContainer"></div>
+        </div>
+    </div>
+    <div id="resultArea" class="result-box">
+    </div>
+    <a id="gitHublink" href="https://github.com/GalloRoccoElia" target="_blank"></a>
+</body>
+
+</html>

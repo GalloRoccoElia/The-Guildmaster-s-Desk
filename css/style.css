@@ -1,0 +1,250 @@
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+    
+    body.parchment-bg {
+        background: url(../img/bg.png) no-repeat center center fixed;
+        background-size: cover;
+        padding: 1cqmin;
+        color: #d97314;
+        min-height: fit-content;
+        font-family: "Garamond", serif;
+    }
+
+    #titleImg {
+        width: 700px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .calculator {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 1rem 15% 2rem 15%;
+    }
+
+    @media (max-width: 1680px) {
+        .calculator {
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+
+    #resultArea {
+        display: none
+    }
+
+    .calc-form {
+        max-height: 618px;
+        min-width: fit-content;
+        max-width: fit-content;
+        padding: 40px;
+        margin: 20px 20px;
+        border-radius: 10px;
+        background-color: rgba(255, 245, 225, 0.9);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    }
+
+    #pgForm {
+        display: none;
+    }
+
+    .calc-form label {
+        color: #5f4440;
+        font-weight: bolder;
+        font-size: 1.2rem;
+    }
+
+    .calc-form input {
+        padding: 8px;
+        border: 2px solid #7a5529;
+        border-radius: 6px;
+        background: #fff9ee;
+        color: #d97314;
+        font-size: medium;
+        width: -webkit-fill-available;
+    }
+
+    .input-group {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin: 15px 0 15px 0;
+        width: 450px;
+        gap: 4px;
+    }
+
+    .btn-info {
+        background: #fff9ee;
+        color: #d97314;
+        font-size: 1rem;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-left: 4px;
+    }
+
+    #btn-group .input-group {
+        margin: 0px;
+    }
+
+    #btn-customShares {
+        padding: 8px;
+        border: 2px solid #7a5529;
+        border-radius: 6px;
+        background: #fff9ee;
+    }
+
+    #btn-calc {
+        background: #BEBC29;
+        color: #fff9ee;
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        border: 2px solid #4b2e15;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 400%;
+    }
+
+    #btn-cal:hover {
+        background: #1b5a39;
+        color: #4b2e15;
+    }
+
+    #btn-reset {
+        background: #DE3838;
+        color: #fff9ee;
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        border: 2px solid #4b2e15;
+        border-radius: 8px;
+        cursor: pointer;
+        width: -webkit-fill-available;
+    }
+
+    .tooltip {
+        display: none;
+        position: absolute;
+        background: #fbe9c4;
+        border: 2px solid #4b2e15;
+        border-radius: 8px 0px 8px 8px;
+        padding: 10px;
+        width: 250px;
+        box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.3);
+        z-index: 10;
+        top: 45px;
+        right: 15px;
+    }
+
+    #tooltip-setCustomShares {
+        right: 45px;
+    }
+
+    #btn-emvInfo:hover+#tooltip-emvInfo,
+    #btn-repairInfo:hover+#tooltip-repairInfo,
+    #btn-participantsInfo:hover+#tooltip-participantsInfo,
+    #btn-bagsInfo:hover+#tooltip-bagsInfo,
+    #btn-discountInfo:hover+#tooltip-discountInfo,
+    #btn-genInfo:hover+#tooltip-genInfo,
+    #btn-customShares:hover+#tooltip-setCustomShares {
+        display: block;
+    }
+
+    #pgContainer {
+        overflow-y: scroll;
+        scrollbar-color: #5a3e1b transparent;
+        box-shadow: inset 0 -10px 8px -8px rgba(0, 0, 0, 0.4);
+        border-radius: 8px;
+        padding-left: 5px;
+        max-height: inherit;
+    }
+
+    .result-box {
+        background-color: #fff5e1f2;
+        border-radius: 10px;
+        min-width: 500px;
+        min-height: fit-content;
+        max-height: fit-content;
+        max-width: fit-content;
+        margin: 30px auto;
+        padding: 15px;
+        text-align: center;
+        font-size: 1.5rem;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    }
+ 
+    .result-box h3{
+        color: #5f4440;
+        border-bottom: 2px solid #5f4440;
+        margin-bottom: .8rem;
+    }
+
+    @media (max-width: 1680px) {
+        .result-box {
+            max-width: 470px;
+            min-width: 470px;
+            box-sizing: content-box;
+        }
+    }
+
+    #groupBoxRes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+        gap: 20px;
+    }
+
+    #groupBoxRes h4 {
+        color: #5f4440;
+        margin: .8rem;
+    }
+
+    #resultArea h4 {
+        color: #5f4440;
+        margin: .8rem;
+    }
+
+    #boxResCustomShare {
+        overflow-y: auto;
+        scrollbar-color: #5a3e1b transparent;
+        resize: vertical;
+        height: 100px;
+        min-height: 110px;
+        max-height: inherit;
+        box-shadow: inset 0 -10px 8px -8px rgba(0, 0, 0, 0.4);
+        border-radius: 8px;
+        padding-left: 5px;
+    }
+
+
+    .btnCopy {
+        background-image: url(../img/copyIcon.svg);
+        background-color: transparent;
+        background-size: cover;
+        border: none;
+        cursor: pointer;
+        height: 25px;
+        width: 25px;
+    }
+
+    #btnExpand {
+        background-image: url(../img/expandIcon.svg);
+        background-color: transparent;
+        background-size: cover;
+        border: 2px solid;
+        border-radius: 6px;
+        cursor: pointer;
+        height: 25px;
+        width: 25px;
+    }
+    
+    #gitHublink {
+        background-image: url(../img/github-mark-white.svg);
+        background-size: cover;
+        cursor: pointer;
+        position: fixed;
+        left: 20px;
+        bottom: 20px;
+        height: 60px;
+        width: 60px;
+    }

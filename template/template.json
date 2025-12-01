@@ -1,0 +1,48 @@
+{
+    "tmpls": [
+        {
+            "title": "Beyond the Veil",
+            "img_bg_uri": "\\img\\backgrounds\\Beyond_the_Veil.jpeg",
+            "btnInfo_position": "right",
+            "btnCalclate_color": "#",
+            "btnReset_color": "#",
+            "form_bg_color": "#",
+            "btns_txt_color": "#",
+            "titles_txt_color": "#",
+            "values_txt_color": "#"
+        },
+        {
+            "title": "Avalonians",
+            "img_bg_uri": "\\img\\backgrounds\\Avalonians",
+            "btnInfo_position": "right",
+            "btnCalclate_color": "#",
+            "btnReset_color": "#",
+            "form_bg_color": "#",
+            "btns_txt_color": "#",
+            "titles_txt_color": "#",
+            "values_txt_color": "#"
+        },
+        {
+            "title": "Morgana",
+            "img_bg_uri": "\\img\\backgrounds\\Morgana",
+            "btnInfo_position": "left",
+            "btnCalclate_color": "#",
+            "btnReset_color": "#",
+            "form_bg_color": "#",
+            "btns_txt_color": "#",
+            "titles_txt_color": "#",
+            "values_txt_color": "#"
+        },
+        {
+            "title": "Undead",
+            "img_bg_uri": "\\img\\backgrounds\\Undead",
+            "btnInfo_position": "left",
+            "btnCalclate_color": "#",
+            "btnReset_color": "#",
+            "form_bg_color": "#",
+            "btns_txt_color": "#",
+            "titles_txt_color": "#",
+            "values_txt_color": "#"
+        }
+    ]
+}
