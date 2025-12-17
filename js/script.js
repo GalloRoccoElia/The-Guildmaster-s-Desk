@@ -165,7 +165,7 @@ function calcResults() {
         
         let res_discountedTab = document.createElement("div")
         res_discountedTab.id = "resDiscountedTab"
-        res_discountedTab.textContent = (parseInt((emvVal - repairVal) * ((100 - discountVal) / 100))).toLocaleString("it-IT")
+        res_discountedTab.textContent = (parseInt((emvVal * (100 - discountVal) / 100)) - repairVal).toLocaleString("it-IT")
         
         let val_and_copyBtn = document.createElement("div")
         val_and_copyBtn.style.display = "flex"
@@ -195,7 +195,7 @@ function calcResults() {
 
         let res_totSplit = document.createElement("div")
         res_totSplit.id = "resTotSplit"
-        res_totSplit.textContent = parseInt((emvVal - repairVal) * ((100 - discountVal) / 100) + bagsVal).toLocaleString("it-IT")
+        res_totSplit.textContent = parseInt((emvVal * (100 - discountVal) / 100) - repairVal + bagsVal).toLocaleString("it-IT")
 
         let val_and_copyBtn = document.createElement("div")
         val_and_copyBtn.style.display = "flex"
@@ -218,7 +218,7 @@ function calcResults() {
     // -------- Result/Shares -------- //
     if (participantsVal > 0) {
 
-        let parzial = (emvVal - repairVal) * ((100 - discountVal) / 100) + bagsVal
+        let parzial = (emvVal * (100 - discountVal) / 100) - repairVal + bagsVal
 
         if (!customSharesCheck) {
             let box_res_share = document.createElement("div")
@@ -313,7 +313,7 @@ function calcResults() {
 }
 
 function feedback() {
-    // to do
+    // to do se ho voglia
 
     // setTimeout(() => {
     //     messaggioFeedback.style.display = 'none';
